@@ -1,0 +1,371 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+.nav1 {
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.div-head {
+    height: 50px;
+    display: flex;
+    justify-content: space-around; /* Default for larger screens */
+    align-items: center;
+}
+
+.color {
+    color: red;
+}
+
+.nav-link {
+    width: 30%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.link1:hover {
+    color: red;
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-hov:hover {
+    color: red;
+}
+
+.txt {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .div-head {
+        justify-content: space-between; /* Adjust as needed */
+        padding: 0 10px; /* Add some padding for spacing */
+    }
+
+    .nav-link {
+        width: 60%; /* Adjust the width or hide some links if necessary */
+        justify-content: space-around;
+    }
+
+    .icon {
+        /*  Consider adjusting icon spacing or wrapping them if needed */
+    }
+}
+
+ .back{
+    background-color: rgb(234, 233, 233);
+    width: 100%;
+    height: max-content;    
+    display: flex;
+    justify-content:center;
+}
+.back1 {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center; 
+}
+
+
+ #demo{
+    text-align: left;   
+    padding-left: 260px;
+    width: 150%;
+    padding-top: 62px;
+    padding-right: 100px;
+
+} 
+
+.btn1 { 
+    background-color: rgb(58, 56, 56);
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;  
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;  
+    cursor: pointer;  
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn1:hover {
+    background-color: #333;  
+}
+
+.foot{
+    background-color: black;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    text-align: center;
+} 
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.contact_sec{
+    display:flex;
+}
+
+/*  Blog Section Styling */
+.blog-container {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.blog-post {
+    width: 300px; 
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+
+.blog-post img {
+    width: 100%;  
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.blog-post p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    background-color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form,
+.contact-info {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f4;
+}
+
+.contact-info img {
+    width: 52%;
+    height: auto; 
+    border-radius: 5px;
+}
+
+
+/* Form Group Styles (keep these!) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical; 
+}
+
+/* Contact Info Styles (keep these!) */
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    text-align: left; 
+}
+
+
+
+/* About Section Styles */
+#about {
+     background-color: #f5f5f4;
+}
+
+.about-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 45%; 
+    text-align: center; 
+}
+
+.about-image img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.about-content {
+    width: 50%; 
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Media Query for Smaller Screens (Optional, but recommended) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        width: 90%;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%; /* Take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        text-align: center; /* Center image */
+    }
+
+    .about-content p {
+        text-align: left;  /* Keep content left-aligned */
+    }
+}
+
+
+/* Shop Section Styles */
+ #shop {
+    background-color: #f5f5f4;
+
+} 
+
+.shop-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.shop-item {
+    width: calc(25% - 20px); 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shop-item img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+.shop-item h2 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.shop-item .price {
+    font-weight: bold;
+    color: #007bff; 
+    margin-bottom: 15px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 1024px) { 
+    .shop-item {
+        width: calc(33.333% - 20px); 
+    }
+}
+@media (max-width: 768px) {
+    .shop-container {
+        width: 90%;
+    }
+
+    .shop-item {
+        width: calc(50% - 20px); /* Two items per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-item {
+        width: 100%; /* One item per row on extra small screens */
+    }
+}
+
+
